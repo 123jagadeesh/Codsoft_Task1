@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <style>
+    h1,h2,h3,h4,h5,h6,p,a,i{
+      font-family: Montserrat,sans-serif;
+      color: white;
+    }
+    body{
+      background-color: #222;
+      color: white;
+      margin: 0; /* Added to reset default margin */
+    }
+    .sidebar{
+      width: 100%;
+      display: flex;
+      background-color: #222;
+      z-index: 1; 
+      position: fixed;
+    }
+    .header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: #222;
+      padding: 10px;
+      position: fixed;
+      width: 100%;
+      z-index: 2;
+    }
+    a:hover{
+      text-decoration: none;
+    }
+    .home,.resume{
+      padding-top: 50px;
+      align-items: center;
+      display: flex;
+      justify-content: space-evenly;
+      height: 600px;
+    }
+    .header,.sidebar{
+      padding-top: 25px;
+      padding-bottom: 25px;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-evenly;
+      text-decoration: none;
+      top:0;
+      width: 100%;
+      height: 50px;
+    }
+    .name{
+      margin-top: 10px;
+      margin-left: 20px;
+    }
+   .name a{
+    padding: 10px;
+    font-size: 26px;
+   }
+    .me img{
+      height: 300px;
+      width: 125px;
+      border-radius: 50%;
+    }
+    .about{
+   text-align: center;   
+  padding: 175px 225px;
+  height: 500px;
+}
+.projects{
+  padding: 175px 225px;
+  height: 600px;
+} 
+.contact,.skills{
+   padding: 175px 225px;
+   height: 600px;
+}
+.contact p,.skills p{
+  margin-left: 100px;
+  margin-right: 100px;
+  /* text-align: center;   */
+}
+.contact a{
+  padding: 10px;
+ font-size: 26px;
+}
+/* .contact i{ */
+  /* color: #222; */
+/* } */
+  </style>
+  <title>PORTFOLIO</title>
+</head>
+<body>
+  <header class ="header">
+    <nav class="sidebar">
+      <a href="#home" >
+        <i class="fa fa-home w3-xxlarge" ></i>
+        <p>HOME</p>
+      </a>
+      <a href="#about" >
+        <i class="fa fa-user w3-xxlarge" ></i>
+        <p> ABOUT</p>
+      </a>
+      <a href="#skills" >
+        <i class="fa fa-code w3-xxlarge"  ></i>
+        <p>SKILLS</p>
+      </a>
+      <a href="#projects" >
+        <i class="fa fa-list check w3-xxlarge" ></i>
+        <p>PROJECTS</p>
+      </a>
+      <a href="#resume">
+        <i class="fa fa-file w3-xxlarge"></i>
+        <p>RESUME</p>
+      </a>
+      <a href="#contact">
+        <i class="fa fa-envelope w3-xxlarge"></i>
+        <p>CONTACT</p>
+      </a>
+    </nav>
+  </header>
+  <div class="main">
+    <div class="home" id="home">
+      <div class="name">
+        <h1><p>I'm</p>
+        <p>Jagadeesh</p>
+        <p>Computer Science</p>
+        <p>Undergrade</p></h1>
+        <a href="mailto:jagadeeshjagan2003@gmail.com"><i class="fa fa-envelope w3-xxlarge"></i></a>
+        <a href="https://www.linkedin.com/in/jagadeeshospari7569"><i class="fa fa-linkedin w3-xxlarge"></i></a>
+        <a href="https://github.com/123jagadeesh"><i class="fa fa-github w3-xxlarge"></i></a>
+      </div>
+      <div class="me">
+        <img src="/myimg.jpg">
+      </div>
+    </div>
+    <div class="about" id="about">
+      <h1>About Me</h1><br><br>
+      <p>As a proactive learner, I am on the lookout for opportunities that will challenge me to expand my knowledge and skill set. I am eager to collaborate with industry professionals, contribute to impactful projects, and continue my journey of growth in the rapidly evolving field of Computer Science.</p>
+    </div>
+    <div class="skills" id="skills">
+      <h1>Skills</h1><br><br>
+      <p>c, c++, python, html, css, javascript</p>
+      <p>Data Structures and algorithms, oops</p>
+      <p>sql</p>
+    </div>
+    <div class="projects" id="projects">
+      <h1>Projects</h1><br><br>
+        <h3>Matrix Manipulation</h3>
+        <p>Input matrices taken from .csv file and the program can be run with Command Line Interface</p>
+         <br>
+        <h3>String modification</h3>
+        <p>String modification is a useful tool for programmers who need to search through large databases of names or phrases quickly and accurately.</p>
+      
+    </div>
+    <div class="resume" id="resume">
+      <a href="/Jagadeesh Resume.pdf" ><i class="fa fa-eye w3-xxlarge"></i><p>View Resume</p></a>
+      <a href="/Jagadeesh Resume.pdf" download><i class="fa fa-download w3-xxlarge"></i><p>Download Resume</p></a>
+    </div>
+    <div class="contact" id="contact">
+      <h1>Contact Me</h1>
+     <!-- <h1><hr style="width:200px" class="w3-opacity"></h1> -->
+      <br><br>
+
+      <p>Let's get in touch</p><br>
+      <p><i class="fa fa-map-marker fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> Amaravati, AP</p>
+      <p><i class="fa fa-phone fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> Phone: +91 7569434117</p>
+      <p><i class="fa fa-envelope fa-fw w3-text-white w3-xxlarge w3-margin-right"> </i> Email: jagadeeshjagan2003@mail.com</p>
+      <br>
+          <!-- <p><a href="mailto:jagadeeshjagan2003@gmail.com"><i class="fa fa-envelope w3-xxlarge"></i>Send me mail</a><br></p> -->
+      <form action="/action_page.php" target="_blank">
+        <p><input class="w3-input w3-padding-16" type="text" placeholder="Name" required name="Name" style="width: 50%; height: 40px;"></p>
+        <p><input class="w3-input w3-padding-16" type="text" placeholder="Email" required name="Email" style="width: 50%; height: 40px;"></p>
+        <p><input class="w3-input w3-padding-16" type="text" placeholder="Subject" required name="Subject" style="width: 50%; height: 40px;"></p>
+        <p><input class="w3-input w3-padding-16" type="text" placeholder="Message" required name="Message" style="width: 50%; height: 40px;"></p>
+        <p>
+          <button class="w3-button w3-light-grey w3-padding-large" type="submit" style="width: 25%; height: 40px;">
+            <i class="fa fa-paper-plane"></i> SEND MESSAGE
+          </button>
+        </p>
+      </form>
+      <p><a href="https://www.linkedin.com/in/jagadeeshospari7569"><i class="fa fa-linkedin w3-xxlarge"></i></a><br></p>
+      <p><a href="https://github.com/123jagadeesh"><i class="fa fa-github w3-xxlarge"></i></a></p>
+    </div>
+  </div>
+</body>
+</html>

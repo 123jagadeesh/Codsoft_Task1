@@ -1,0 +1,32 @@
+.leftpic{
+   float: left;
+   left: 20%;
+   width: 50%;
+   img{
+    border-radius: 50%;
+   }
+}
+.rightname{
+    float: right;
+    width: 50%;
+}
+body{
+    background-color: beige;
+}
+img{
+    border-radius: 10px 10px;
+}
+.skils{
+   width: 100%;
+   margin: center;
+   padding: 10%;
+   background-color: blue;
+}
+.contact{
+    text-align: center;
+    margin: 1% ;
+    color: blac;
+}
+div{
+    background-color: lightyellow;
+}
